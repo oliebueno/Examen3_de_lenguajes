@@ -41,8 +41,6 @@ class Manejador:
             print(metodo, " -> ", clase, " ::", metodo)
 
 # Funcion principal
-
-
 def main():
     manejador = Manejador()
     while True:
