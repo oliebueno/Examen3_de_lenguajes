@@ -54,3 +54,8 @@ Cada restricción se modela de la siguiente forma:
     $(\neg M_{v,l,d',h'} \lor \neg M_{v,l,d',h'})$ con $(d, h) != (d', h') $ Esta cláusula asegura que se jueguen exactamente una vez.
   
 ## Especificaciones de la implementación
+Para la implementación de la solución se uso python como lenguaje y Glucose como solucionar SAT. A continuación se detallan los archivos y sus funciones.
+
+- read_json: contiene las funciones para leer archivos.json con las especificaciones de torneos, además contiene funciones que retornan cada dia del torneo y las horas especificas en las que se puede jugar cada encuentro, las cuales son necesarias para establecer las variables.
+
+- traductor_cnf: contiene la clase "TraductorCNF" la cual se encarga de generar todos los posibles encuentros, realizando un producto cruz, guardando dichos encuentros en un diccionario, a los cuales se les da como claves números enteros, los cuales son las variables para la cnf. Además contiene las funciones que para establecer las clausulas de cada una de las restricciones como fueron definidas en la sección anterior
