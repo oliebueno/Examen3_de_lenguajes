@@ -22,10 +22,14 @@ Cada restricción se modela de la siguiente forma:
 - Todos los juegos deben empezar en horas "en punto": Esto esta contemplado por la definicíon de la variable M, dado por el dominio del sub-índice h.
 - Todos los juegos deben ocurrir entre una fecha inicial y una fecha final especificadas: Esto esta contemplado por la definicíon de la variable M, dado por el dominio del sub-índice d.
 - Todos los juegos deben ocurrir entre un rango de horas especificado: Esto esta contemplado por la definicíon de la variable M, dado por el dominio del sub-índice h.
-- Un participante no puede jugar de "visitante" en dos días consecutivos, ni de "local" dos días seguidos: Se definen las siguientes restricciones lógicas
+- Un participante no puede jugar de "visitante" en dos días consecutivos, ni de "local" dos días seguidos: Se definen las siguientes cláusulas lógicas
 
   
   $(\neg M_{l,v,d,h} \lor \neg M_{l,v,d+1,h})$   Para los partidos como local
   
   $(\neg M_{v,l,d,h} \lor \neg M_{v,l,d+1,h})$   Para los partidos como visitante
+
+- Un participante puede jugar a lo sumo una vez por día: Se definen las siguiente cláusula lógica
+
+  $(\neg M_{l,v,d,h} \lor \neg M_{l,v,d+1,h'})$   con $h != h' $   
   
