@@ -36,4 +36,11 @@ Cada restricción se modela de la siguiente forma:
 - Dos juegos no pueden ocurrir al mismo tiempo: Se definen las siguiente cláusula lógica
 
   $(\neg M_{l,v,d,h} \lor \neg M_{l',v',d,h})$ con $(l,v) != (l', v') $
+
+- Todos los participantes deben jugar dos veces con cada uno de los otros participantes, una como "visitantes" y la otra como "locales": Se definen las siguientes cláusulas lógicas
+
+  $\forall d,h | M_{l,v,d,h}$ donde el equipo l juega como local contra el equipo v. Esto cláusula asegura que se juegue al  
+  menos una vez.
+
+  $(\neg M_{l,v,d',h'} \lor \neg M_{l,v,d',h'})$ con $(d, h) != (d', h') $ Esta cláusula asegura que se jueguen exactamente     una vez
   
