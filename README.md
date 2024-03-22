@@ -22,7 +22,9 @@ Cada restricción se modela de la siguiente forma:
 - Todos los juegos deben empezar en horas "en punto": Esto esta contemplado por la definicíon de la variable M, dado por el dominio del sub-índice h.
 - Todos los juegos deben ocurrir entre una fecha inicial y una fecha final especificadas: Esto esta contemplado por la definicíon de la variable M, dado por el dominio del sub-índice d.
 - Todos los juegos deben ocurrir entre un rango de horas especificado: Esto esta contemplado por la definicíon de la variable M, dado por el dominio del sub-índice h.
-- Un participante no puede jugar de "visitante" en dos días consecutivos, ni de "local" dos días seguidos:
+- Un participante no puede jugar de "visitante" en dos días consecutivos, ni de "local" dos días seguidos: Se definen las siguientes restricciones lógicas
+
   
-  sdsd
-  sdsd
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">¬</mi><msub><mi>x</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo separator="true">,</mo><mi>k</mi><mo separator="true">,</mo><mi>l</mi></mrow></msub><mo>∨</mo><mi mathvariant="normal">¬</mi><msub><mi>x</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo separator="true">,</mo><mi>k</mi><mo>+</mo><mn>1</mn><mo separator="true">,</mo><mi>l</mi></mrow></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\neg x_{i,j,k,l} \lor \neg x_{i,j,k+1,l}) 
+</annotation></semantics></math>
+  
