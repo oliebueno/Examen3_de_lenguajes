@@ -31,5 +31,9 @@ Cada restricción se modela de la siguiente forma:
 
 - Un participante puede jugar a lo sumo una vez por día: Se definen las siguiente cláusula lógica
 
-  $(\neg M_{l,v,d,h} \lor \neg M_{l,v,d+1,h'})$   con $h != h' $   
+  $(\neg M_{l,v,d,h} \lor \neg M_{l,v',d,h'})$ con $h != h' $
+
+- Dos juegos no pueden ocurrir al mismo tiempo: Se definen las siguiente cláusula lógica
+
+$(\neg M_{l,v,d,h} \lor \neg M_{l',v',d,h})$ con $(l,v) != (l', v') $
   
