@@ -53,3 +53,4 @@ Cada restricción se modela de la siguiente forma:
 
     $(\neg M_{v,l,d',h'} \lor \neg M_{v,l,d',h'})$ con $(d, h) != (d', h') $ Esta cláusula asegura que se jueguen exactamente una vez.
   
+## Especificaciones de la implementación
