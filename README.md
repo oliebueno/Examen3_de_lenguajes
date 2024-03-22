@@ -16,3 +16,10 @@ Para establecer las restriciones se establece la variable M con los sub-índices
 - Dom v: Son todos los posibles equipos.
 - Dom d: Son todas las posibles fechas desde el día inicial, hasta el día final
 - Dom h: Son todoas las posible horas en punto en las que puede empezar un juego, esto es, si la hora de inicio es 07:30:00 y la hora de culminación de la jornada es 14:00:00, el dominio de las horas para los encuentros es {08:00:00, 10:00:00, 12:00:00}. El dominio contiene la primera hora en punto más cercana al inicio y se va incrementando cada dos horas hasta la última hora válida.
+
+Cada restricción se modela de la siguiente forma:
+
+- Todos los juegos deben empezar en horas "en punto": Esto esta contemplado por la definicíon de la variable M, dado por el dominio del sub-índice h.
+- Todos los juegos deben ocurrir entre una fecha inicial y una fecha final especificadas: Esto esta contemplado por la definicíon de la variable M, dado por el dominio del sub-índice d.
+- Todos los juegos deben ocurrir entre un rango de horas especificado: Esto esta contemplado por la definicíon de la variable M, dado por el dominio del sub-índice h.
+- Un participante no puede jugar de "visitante" en dos días consecutivos, ni de "local" dos días seguidos: 
