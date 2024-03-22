@@ -25,5 +25,5 @@ Cada restricción se modela de la siguiente forma:
 - Un participante no puede jugar de "visitante" en dos días consecutivos, ni de "local" dos días seguidos: Se definen las siguientes restricciones lógicas
 
   
-  $\neg M_{l,v,d,h}$
+  $\neg M_{l,v,d,h} \or $
   
