@@ -25,6 +25,7 @@ Cada restricción se modela de la siguiente forma:
 - Un participante no puede jugar de "visitante" en dos días consecutivos, ni de "local" dos días seguidos: Se definen las siguientes restricciones lógicas
 
   
-  $\neg M_{l,v,d,h} \lor \neg M_{l,v,d+1,h}$   Para los partidos como local
-  $\neg M_{v,l,d,h} \lor \neg M_{v,l,d+1,h}$   Para los partidos como local
+  $(\neg M_{l,v,d,h} \lor \neg M_{l,v,d+1,h})$   Para los partidos como local
+  
+  $(\neg M_{v,l,d,h} \lor \neg M_{v,l,d+1,h})$   Para los partidos como visitante
   
