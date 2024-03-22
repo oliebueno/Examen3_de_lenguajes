@@ -35,5 +35,5 @@ Cada restricción se modela de la siguiente forma:
 
 - Dos juegos no pueden ocurrir al mismo tiempo: Se definen las siguiente cláusula lógica
 
-$(\neg M_{l,v,d,h} \lor \neg M_{l',v',d,h})$ con $(l,v) != (l', v') $
+  $(\neg M_{l,v,d,h} \lor \neg M_{l',v',d,h})$ con $(l,v) != (l', v') $
   
