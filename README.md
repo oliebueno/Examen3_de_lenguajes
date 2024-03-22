@@ -58,4 +58,8 @@ Para la implementación de la solución se uso python como lenguaje y Glucose co
 
 - read_json: contiene las funciones para leer archivos.json con las especificaciones de torneos, además contiene funciones que retornan cada dia del torneo y las horas especificas en las que se puede jugar cada encuentro, las cuales son necesarias para establecer las variables.
 
-- traductor_cnf: contiene la clase "TraductorCNF" la cual se encarga de generar todos los posibles encuentros, realizando un producto cruz, guardando dichos encuentros en un diccionario, a los cuales se les da como claves números enteros, los cuales son las variables para la cnf. Además contiene las funciones que para establecer las clausulas de cada una de las restricciones como fueron definidas en la sección anterior
+- traductor_cnf: contiene la clase "TraductorCNF" la cual se encarga de generar todos los posibles encuentros, realizando un producto cruz, guardando dichos encuentros en un diccionario, a los cuales se les da como claves números enteros, los cuales son las variables para la cnf. Además contiene las funciones que para establecer las clausulas de cada una de las restricciones como fueron definidas en la sección anterior, también contiene las funciones para traducir las clausulas al formato Dismac y para traducir las salidas que retorne el SAT-solver a formato .ics.
+
+- utils: contiene las funciones necesarias para ejecutar el SAT-solver Glucose.
+
+- main: contiene el cliente principal para la ejecuación de las tareas del programa.
