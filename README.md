@@ -22,4 +22,6 @@ Cada restricción se modela de la siguiente forma:
 - Todos los juegos deben empezar en horas "en punto": Esto esta contemplado por la definicíon de la variable M, dado por el dominio del sub-índice h.
 - Todos los juegos deben ocurrir entre una fecha inicial y una fecha final especificadas: Esto esta contemplado por la definicíon de la variable M, dado por el dominio del sub-índice d.
 - Todos los juegos deben ocurrir entre un rango de horas especificado: Esto esta contemplado por la definicíon de la variable M, dado por el dominio del sub-índice h.
-- Un participante no puede jugar de "visitante" en dos días consecutivos, ni de "local" dos días seguidos: 
+- Un participante no puede jugar de "visitante" en dos días consecutivos, ni de "local" dos días seguidos:
+- -- sdds
+- s
